@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+              adaptable="true"
+            objectClass="org.eclipse.core.resources.IFile"
+            id="eu.miclen.pastebin.contribution1">
+         <action
+               label="Send to Pastebin"
+               class="eu.miclen.pastebin.popup.actions.Action"
+               enablesFor="1"
+               id="eu.miclen.pastebin.Action">
+         </action>
+      </objectContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="eu.miclen.pastebin.preferences.PreferencePage"
+            id="eu.miclen.pastebin.preferences.PreferencePage"
+            name="PasteBin">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="eu.miclen.pastebin.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+
+</plugin>

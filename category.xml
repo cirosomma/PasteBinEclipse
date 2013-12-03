@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <bundle id="PasteBin" version="1.1.0">
+      <category name="PasteBin"/>
+   </bundle>
+   <category-def name="PasteBin" label="PasteBin Tool"/>
+</site>
